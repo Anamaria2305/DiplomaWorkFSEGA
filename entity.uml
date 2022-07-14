@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.blooddonation.entity</OriginalElement>
+  <nodes>
+    <node x="91.25" y="1738.0">com.example.blooddonation.entity.Stock</node>
+    <node x="91.25" y="302.0">com.example.blooddonation.entity.Appointment</node>
+    <node x="75.75" y="1238.0">com.example.blooddonation.entity.Staff</node>
+    <node x="75.75" y="780.0">com.example.blooddonation.entity.BloodType</node>
+    <node x="51.75" y="518.0">com.example.blooddonation.entity.Users</node>
+    <node x="91.25" y="998.0">com.example.blooddonation.entity.Requests</node>
+    <node x="51.75" y="1500.0">com.example.blooddonation.entity.Hospital</node>
+    <node x="77.75" y="0.0">com.example.blooddonation.entity.Bloodtests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.blooddonation.entity.BloodType" target="com.example.blooddonation.entity.Stock" relationship="TO_MANY">
+      <point x="-49.0" y="82.0" />
+      <point x="124.75" y="966.0" />
+      <point x="168.75" y="966.0" />
+      <point x="168.75" y="976.0" />
+      <point x="0.0" y="976.0" />
+      <point x="0.0" y="1707.0" />
+      <point x="133.0" y="1707.0" />
+      <point x="-41.25" y="-60.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Requests" target="com.example.blooddonation.entity.Staff" relationship="DEPENDENCY">
+      <point x="-41.25" y="93.0" />
+      <point x="132.5" y="1211.0" />
+      <point x="124.75" y="1211.0" />
+      <point x="-49.0" y="-104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Staff" target="com.example.blooddonation.entity.Requests" relationship="DEPENDENCY">
+      <point x="-49.0" y="-104.0" />
+      <point x="124.75" y="1211.0" />
+      <point x="132.5" y="1211.0" />
+      <point x="-41.25" y="93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Staff" target="com.example.blooddonation.entity.Requests" relationship="TO_MANY">
+      <point x="49.0" y="-104.0" />
+      <point x="222.75" y="1211.0" />
+      <point x="215.0" y="1211.0" />
+      <point x="41.25" y="93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Appointment" target="com.example.blooddonation.entity.Hospital" relationship="TO_ONE">
+      <point x="-41.25" y="82.0" />
+      <point x="133.0" y="497.0" />
+      <point x="41.25" y="497.0" />
+      <point x="41.25" y="1468.0" />
+      <point x="133.0" y="1468.0" />
+      <point x="133.0" y="1478.0" />
+      <point x="112.75" y="1478.0" />
+      <point x="-61.0" y="-93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Staff" target="com.example.blooddonation.entity.Hospital" relationship="TO_ONE">
+      <point x="-49.0" y="104.0" />
+      <point x="124.75" y="1468.0" />
+      <point x="133.0" y="1468.0" />
+      <point x="133.0" y="1478.0" />
+      <point x="112.75" y="1478.0" />
+      <point x="-61.0" y="-93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Requests" target="com.example.blooddonation.entity.BloodType" relationship="DEPENDENCY">
+      <point x="41.25" y="-93.0" />
+      <point x="215.0" y="976.0" />
+      <point x="178.75" y="976.0" />
+      <point x="178.75" y="966.0" />
+      <point x="222.75" y="966.0" />
+      <point x="49.0" y="82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.BloodType" target="com.example.blooddonation.entity.Requests" relationship="DEPENDENCY">
+      <point x="49.0" y="82.0" />
+      <point x="222.75" y="966.0" />
+      <point x="178.75" y="966.0" />
+      <point x="178.75" y="976.0" />
+      <point x="215.0" y="976.0" />
+      <point x="41.25" y="-93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Hospital" target="com.example.blooddonation.entity.Appointment" relationship="TO_MANY">
+      <point x="-61.0" y="-93.0" />
+      <point x="112.75" y="1478.0" />
+      <point x="133.0" y="1478.0" />
+      <point x="133.0" y="1468.0" />
+      <point x="41.25" y="1468.0" />
+      <point x="41.25" y="497.0" />
+      <point x="133.0" y="497.0" />
+      <point x="-41.25" y="82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Hospital" target="com.example.blooddonation.entity.Stock" relationship="TO_MANY">
+      <point x="-61.0" y="93.0" />
+      <point x="112.75" y="1707.0" />
+      <point x="133.0" y="1707.0" />
+      <point x="-41.25" y="-60.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Appointment" target="com.example.blooddonation.entity.Users" relationship="DEPENDENCY">
+      <point x="41.25" y="82.0" />
+      <point x="214.5" y="497.0" />
+      <point x="234.75" y="497.0" />
+      <point x="61.0" y="-104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Users" target="com.example.blooddonation.entity.Appointment" relationship="DEPENDENCY">
+      <point x="61.0" y="-104.0" />
+      <point x="234.75" y="497.0" />
+      <point x="214.5" y="497.0" />
+      <point x="41.25" y="82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Requests" target="com.example.blooddonation.entity.Staff" relationship="TO_ONE">
+      <point x="41.25" y="93.0" />
+      <point x="215.0" y="1211.0" />
+      <point x="222.75" y="1211.0" />
+      <point x="49.0" y="-104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Hospital" target="com.example.blooddonation.entity.Staff" relationship="TO_MANY">
+      <point x="-61.0" y="-93.0" />
+      <point x="112.75" y="1478.0" />
+      <point x="133.0" y="1478.0" />
+      <point x="133.0" y="1468.0" />
+      <point x="124.75" y="1468.0" />
+      <point x="-49.0" y="104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Bloodtests" target="com.example.blooddonation.entity.Appointment" relationship="TO_ONE">
+      <point x="-48.0" y="126.0" />
+      <point x="125.75" y="277.0" />
+      <point x="132.5" y="277.0" />
+      <point x="-41.25" y="-82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Appointment" target="com.example.blooddonation.entity.Bloodtests" relationship="TO_ONE">
+      <point x="-41.25" y="-82.0" />
+      <point x="132.5" y="277.0" />
+      <point x="125.75" y="277.0" />
+      <point x="-48.0" y="126.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Stock" target="com.example.blooddonation.entity.Hospital" relationship="TO_ONE">
+      <point x="-41.25" y="-60.0" />
+      <point x="133.0" y="1707.0" />
+      <point x="112.75" y="1707.0" />
+      <point x="-61.0" y="93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Stock" target="com.example.blooddonation.entity.Hospital" relationship="DEPENDENCY">
+      <point x="41.25" y="-60.0" />
+      <point x="214.5" y="1707.0" />
+      <point x="234.75" y="1707.0" />
+      <point x="61.0" y="93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Hospital" target="com.example.blooddonation.entity.Stock" relationship="DEPENDENCY">
+      <point x="61.0" y="93.0" />
+      <point x="234.75" y="1707.0" />
+      <point x="214.5" y="1707.0" />
+      <point x="41.25" y="-60.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Bloodtests" target="com.example.blooddonation.entity.Appointment" relationship="DEPENDENCY">
+      <point x="48.0" y="126.0" />
+      <point x="221.75" y="277.0" />
+      <point x="215.0" y="277.0" />
+      <point x="41.25" y="-82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Appointment" target="com.example.blooddonation.entity.Bloodtests" relationship="DEPENDENCY">
+      <point x="41.25" y="-82.0" />
+      <point x="215.0" y="277.0" />
+      <point x="221.75" y="277.0" />
+      <point x="48.0" y="126.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Hospital" target="com.example.blooddonation.entity.Staff" relationship="DEPENDENCY">
+      <point x="61.0" y="-93.0" />
+      <point x="234.75" y="1478.0" />
+      <point x="214.5" y="1478.0" />
+      <point x="214.5" y="1468.0" />
+      <point x="222.75" y="1468.0" />
+      <point x="49.0" y="104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Staff" target="com.example.blooddonation.entity.Hospital" relationship="DEPENDENCY">
+      <point x="49.0" y="104.0" />
+      <point x="222.75" y="1468.0" />
+      <point x="214.5" y="1468.0" />
+      <point x="214.5" y="1478.0" />
+      <point x="234.75" y="1478.0" />
+      <point x="61.0" y="-93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Appointment" target="com.example.blooddonation.entity.Users" relationship="TO_ONE">
+      <point x="-41.25" y="82.0" />
+      <point x="133.0" y="497.0" />
+      <point x="112.75" y="497.0" />
+      <point x="-61.0" y="-104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Requests" target="com.example.blooddonation.entity.BloodType" relationship="TO_ONE">
+      <point x="-41.25" y="-93.0" />
+      <point x="132.5" y="976.0" />
+      <point x="168.75" y="976.0" />
+      <point x="168.75" y="966.0" />
+      <point x="124.75" y="966.0" />
+      <point x="-49.0" y="82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.BloodType" target="com.example.blooddonation.entity.Requests" relationship="TO_MANY">
+      <point x="-49.0" y="82.0" />
+      <point x="124.75" y="966.0" />
+      <point x="168.75" y="966.0" />
+      <point x="168.75" y="976.0" />
+      <point x="132.5" y="976.0" />
+      <point x="-41.25" y="-93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Hospital" target="com.example.blooddonation.entity.Appointment" relationship="DEPENDENCY">
+      <point x="61.0" y="-93.0" />
+      <point x="234.75" y="1478.0" />
+      <point x="214.5" y="1478.0" />
+      <point x="214.5" y="1468.0" />
+      <point x="306.25" y="1468.0" />
+      <point x="306.25" y="497.0" />
+      <point x="214.5" y="497.0" />
+      <point x="41.25" y="82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Appointment" target="com.example.blooddonation.entity.Hospital" relationship="DEPENDENCY">
+      <point x="41.25" y="82.0" />
+      <point x="214.5" y="497.0" />
+      <point x="306.25" y="497.0" />
+      <point x="306.25" y="1468.0" />
+      <point x="214.5" y="1468.0" />
+      <point x="214.5" y="1478.0" />
+      <point x="234.75" y="1478.0" />
+      <point x="61.0" y="-93.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Users" target="com.example.blooddonation.entity.BloodType" relationship="DEPENDENCY">
+      <point x="61.0" y="104.0" />
+      <point x="234.75" y="753.0" />
+      <point x="222.75" y="753.0" />
+      <point x="49.0" y="-82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.BloodType" target="com.example.blooddonation.entity.Users" relationship="DEPENDENCY">
+      <point x="49.0" y="-82.0" />
+      <point x="222.75" y="753.0" />
+      <point x="234.75" y="753.0" />
+      <point x="61.0" y="104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Users" target="com.example.blooddonation.entity.Appointment" relationship="TO_MANY">
+      <point x="-61.0" y="-104.0" />
+      <point x="112.75" y="497.0" />
+      <point x="133.0" y="497.0" />
+      <point x="-41.25" y="82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Users" target="com.example.blooddonation.entity.BloodType" relationship="TO_ONE">
+      <point x="-61.0" y="104.0" />
+      <point x="112.75" y="753.0" />
+      <point x="124.75" y="753.0" />
+      <point x="-49.0" y="-82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.BloodType" target="com.example.blooddonation.entity.Users" relationship="TO_MANY">
+      <point x="-49.0" y="-82.0" />
+      <point x="124.75" y="753.0" />
+      <point x="112.75" y="753.0" />
+      <point x="-61.0" y="104.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.BloodType" target="com.example.blooddonation.entity.Stock" relationship="DEPENDENCY">
+      <point x="49.0" y="82.0" />
+      <point x="222.75" y="966.0" />
+      <point x="178.75" y="966.0" />
+      <point x="178.75" y="976.0" />
+      <point x="347.5" y="976.0" />
+      <point x="347.5" y="1707.0" />
+      <point x="214.5" y="1707.0" />
+      <point x="41.25" y="-60.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Stock" target="com.example.blooddonation.entity.BloodType" relationship="DEPENDENCY">
+      <point x="41.25" y="-60.0" />
+      <point x="214.5" y="1707.0" />
+      <point x="347.5" y="1707.0" />
+      <point x="347.5" y="976.0" />
+      <point x="178.75" y="976.0" />
+      <point x="178.75" y="966.0" />
+      <point x="222.75" y="966.0" />
+      <point x="49.0" y="82.0" />
+    </edge>
+    <edge source="com.example.blooddonation.entity.Stock" target="com.example.blooddonation.entity.BloodType" relationship="TO_ONE">
+      <point x="-41.25" y="-60.0" />
+      <point x="133.0" y="1707.0" />
+      <point x="0.0" y="1707.0" />
+      <point x="0.0" y="976.0" />
+      <point x="168.75" y="976.0" />
+      <point x="168.75" y="966.0" />
+      <point x="124.75" y="966.0" />
+      <point x="-49.0" y="82.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.575825346112886" showDependencies="true" x="283.2203266329593" y="439.7891621971518" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
